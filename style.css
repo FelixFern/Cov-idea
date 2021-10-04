@@ -1,0 +1,501 @@
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/Helvetica.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/Helvetica-Bold.ttf');
+    font-weight: bold;
+}
+.loader-bg {
+    margin: 0;
+    position: fixed;
+    z-index: 1001;
+    background: url('img/background-white.svg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.loader {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    color: #767676;
+}
+.loader h1 {
+    margin: auto;
+}
+.loader p {
+    margin-top: 0;
+}
+
+/* Base */
+html {
+    font-family: 'Helvetica';
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+}
+body::-webkit-scrollbar-track {
+    background: #FCA4A4;
+}
+body::-webkit-scrollbar-thumb {
+    background: white;
+}
+/* Bagian Utama */
+.main-1 {
+    position: relative;
+    z-index: 6;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: fit-content;
+    padding-bottom: 12vh;
+    background: url('img/background.svg') no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+}
+/* Section 1 */
+.main-s1 {
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.main-s1 nav {
+    display: flex;
+    justify-content:space-between;
+    align-content: center;
+    height: fit-content;
+    width: 100%;
+    padding-top: 2%;
+}
+#logo {
+    height: 100px;
+    width: auto;
+}
+
+/* Button Kuisioner */
+#kuisioner {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+    color: #FF6363;
+    font-size: 18px;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 18px 5px 18px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+}
+#kuisioner:hover {
+    opacity: 0.9;
+}
+
+/* Konten Main-1 */
+.konten-1 {
+    display: flex;
+    margin-top: 50px;
+}
+/* Kotak Kasus */
+#kotak-kasus {
+    flex: 60%;
+    margin: auto;
+    width: fit-content;
+}
+.kotak {
+    background-color: white;
+    width: 15vw;
+    height: fit-content;
+    margin-bottom: 40px;
+    margin-right: 15px;
+    padding: 13px 15% 8px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+}
+#kotak-kasus #row-1 {
+    display:flex
+}
+#kotak-kasus #row-2 {
+    display:flex
+}
+.kotak h1 {
+    margin: 0;
+    margin-bottom: -5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #767676 ;
+}
+.kotak #kasus {
+    margin: 0;
+    font-size: 50px;
+    margin-top: 5px;
+    color: #767676 ;
+    font-weight: none;
+}
+
+#deskripsi {
+    flex: 30%;
+}
+#deskripsi h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 45px;
+    color: #ffffff;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 3px;
+}
+#deskripsi p {
+    margin: 0;
+    margin-top: 15px;
+    font-size: 22px;
+    color: #ffffff;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 3px;
+}
+
+/* Kotak Vaksinasi */
+.vaksinasi-data {
+    position: relative;
+    z-index: 7;
+    display: flex;
+    margin: auto;
+    width: 88%;
+    height: 18vh;
+    background-color: white;
+    margin-top: -9vh;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+.vaksinasi-data #col-1 {
+    flex: 20%;
+    margin: auto;
+    margin-left: 1%;
+    text-align: center;
+}
+.vaksinasi-data #col-1 h1 {
+    margin: 0;
+    font-size: 50px;
+    color: #FF6363;
+}
+.vaksinasi-data #col-1 p {
+    margin: 0;
+    margin-top: -5px;
+    color: #FF6363;
+}
+.vaksinasi-data #col-2 {
+    flex: 60%;
+    display: flex;
+    margin: auto;
+    margin-right: 1%;
+}
+.vaksinasi-data #col-2 .kotak {
+    margin: auto;
+    height: auto;
+    width: 18vw;
+    margin-bottom: 0px;
+    padding: 13px 12% 8px 30px;
+}
+.vaksinasi-data #col-2 .kotak h1 {
+    font-size: 14px;
+}
+.vaksinasi-data #col-2 .kotak p {
+    font-size: 45px;
+}
+/* Section 2 */
+.main-2 {
+    position: relative;
+    z-index: 5;
+    margin: 0;
+    padding: 0;
+    margin-top: -9vh;
+    width: 100vw;
+    height: fit-content;
+    padding-bottom: 50px;
+    background: url('img/background-white.svg') no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+}
+.main-s2 {
+    margin-left: 6%;
+    margin-right: 6%;
+    padding-top: 18vh;
+    display: flex;
+}
+.main-2 img {
+    width: 110px;
+    margin-right: 25px;
+}
+.main-s2 #title-vaccine h1 {
+    color: #767676;
+    font-size: 40px;
+    margin: 0;
+}
+.main-s2 #title-vaccine span {
+    color: #FF6363;
+    margin: 0;
+}
+.main-s2-1 {
+    margin-left: 6%;
+    margin-right: 6%;
+}
+#vaccine {
+    margin: auto;
+    margin-left: 135px;
+    display: flex;
+}
+#vac-1 {
+    flex: 10%;
+    display: flex;
+}
+#vac-2 {
+    margin: auto;
+}
+#vac-3 {
+    flex: 50%;
+    background-color: #FCA4A4;
+    margin: auto;
+    border-radius: 5px;
+    height: 30px;
+    overflow: hidden;
+}
+#vac-3 p {
+    margin: auto;
+    margin-left: 0; 
+    text-align: center;
+    height: 100%;
+    color: white;
+    background-color: #FF6363;
+    line-height: 30px;
+}
+#kotak-merah {
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: #FF6363;
+}
+#vaccine p { 
+    padding: 0;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.space {
+    width: 20px;
+}
+
+/* Section 3 */
+.main-3 {
+    margin: 0;
+    display: flex;
+    height: fit-content;
+    background: url('img/background-white.svg') no-repeat;
+    background-size: cover;
+}
+.main-3-s1 {
+    flex: 32%;
+    background: url('img/background.svg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 3px;
+    font-size: 22px;
+    padding: 30px;
+}
+.main-3-s1 .row-1 {
+    margin-top: -10px;
+}
+.main-3-s1 .row-2 {
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+}
+.main-3-s1 .row-2 .col-1 {
+    flex: 50%;
+    margin: auto;
+    margin-left: 5%;
+}
+.main-3-s1 .row-2 .col-2 {
+    flex: 50%;
+    margin: auto;    
+    margin-right: 5%;
+}
+.identitas {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.identitas h1 {
+    text-shadow: none;
+    font-size: 20px;
+    margin: 0;
+}
+.identitas p {
+    text-shadow: none;
+    font-size: 18px;
+    margin: 0;
+}
+.identitas img {
+    width: 50%;
+}
+.main-3-s2 {
+    flex: 62%;
+    margin: auto;
+    margin-right: 7%;
+    margin-left: 7%;
+}
+.main-3-s2 p {
+    font-size: 20px;   
+    color: #767676;
+}
+.main-3-s2 span {
+    font-weight: bold;
+    color: #FF6363;
+}
+
+.divider {
+    background: url('img/background.svg') no-repeat;
+    position: relative;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    height: 10vh;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+    z-index: 4;
+}
+.divider h1 {
+    margin: auto;
+    position: relative;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 3px;
+    line-height: 10vh;
+}
+.main-4 {
+    position: relative;
+    z-index: 3;
+    margin: 0;
+    display: flex;
+    height: fit-content;
+    background: url('img/background-white.svg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.main-4 iframe {
+    height: 86vh;
+    width: 90vw;
+    margin: auto;   
+}
+/* Responsive Tablet*/
+@media screen and (max-width: 1000px) {
+    html {
+        overflow-x: hidden;
+    }
+    .main-s1 nav { 
+        padding-top: 5%;
+    }
+    #logo { 
+        height: 85px;
+    }
+    #kuisioner {
+        font-size: 16px;
+        padding: 5px 15px 5px 15px;
+    }
+   .konten-1 {
+       display: block;
+       margin-top: 40px;
+   } 
+   .kotak {
+       width: 42vw;
+       padding: 13px 0 8px 0px;
+       margin-right: 0px;
+       text-align: center;
+   }
+   .kotak h1 {
+       font-size: 12px;
+   }
+   .kotak #kasus {
+       font-size: 25px;
+   }
+   #deskripsi {
+       text-align: center;
+   }
+   #deskripsi h1 {
+       font-size: 30px;
+       margin-top: -5px;
+   }
+   #deskripsi p {
+       margin-top: 8px;
+       margin-bottom: 20px;
+       font-size: 25px;
+   }
+   .vaksinasi-data {
+       display: block;
+       height: fit-content;
+       padding-bottom: 25px;
+       padding-top: 15px;
+   }
+   .vaksinasi-data #col-1 h1 {
+        font-size: 30px;
+        margin-top: 5px;
+    }
+   .vaksinasi-data #col-2 {
+       margin: 0;
+       margin-top: 20px;
+       display: block;
+   }
+   .vaksinasi-data #col-2 .kotak {
+        margin: auto;
+        height: auto;
+        width: 75vw;
+        margin-top: 25px;
+        padding: 13px 0px 8px 0px;
+    }
+    .vaksinasi-data #col-2 .kotak h1 {
+        font-size: 12px;
+    }
+    .vaksinasi-data #col-2 .kotak p {
+        font-size: 35px;
+    }  
+    .main-s2 img{
+        width: 100px;
+    }
+    .main-s2 #title-vaccine h1 {
+        font-size: 32px;
+        margin: auto
+    }
+    #vaccine {
+        margin: 0;
+        display: block;
+        margin-top: 20px;
+    }
+    #vac-2 {
+        margin-top: -24px;
+        margin-bottom: -10px;
+    }
+    .main-3 {
+        display: block;
+    }
+    .main-3-s2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
+    .main-3-s2 p {
+        font-size: 14px;
+    }
+}
